@@ -1,0 +1,131 @@
+
+/*bootstrap*/
+ul{
+	margin-top:0;
+	margin-bottom:10px
+}
+ol ol,ol ul,ul ol,ul ul{
+	margin-bottom:0;
+}
+.dropdown-menu{
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:1000;
+	display:none;
+	float:left;
+	min-width:160px;
+	padding:5px 0;
+	margin:2px 0 0;
+	font-size:14px;
+	text-align:left;
+	list-style:none;
+	background-color:#fff;
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+	border:1px solid #ccc;
+	border:1px solid rgba(0,0,0,.15);
+	border-radius:4px;
+	-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);
+	box-shadow:0 6px 12px rgba(0,0,0,.175)
+}
+.dropdown-menu.pull-right{
+	right:0;left:auto
+}
+.dropdown-menu>li>a{
+	display:block;
+	padding:3px 20px;
+	clear:both;
+	font-weight:400;
+	line-height:1.42857143;
+	color:#333;
+	white-space:nowrap
+}
+.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover{
+	color:#fff;
+	text-decoration:none;
+	background-color:#f5f5f5
+}
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{
+	color:#fff;
+	text-decoration:none;
+	background-color:#337ab7;
+	outline:0
+}
+.open>.dropdown-menu{
+	display:block
+}
+.open>a{
+	outline:0
+}
+.dropdown-menu-right{
+	right:0;
+	left:auto
+}
+.dropdown-menu-left{
+	right:auto;
+	left:0
+}
+.dropdown-header{
+	display:block;
+	padding:3px 20px;
+	font-size:12px;
+	line-height:1.42857143;
+	color:#777;
+	white-space:nowrap
+}
+.dropdown-backdrop{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:990
+}
+.pull-right>.dropdown-menu{
+	right:0;
+	left:auto
+}
+.dropup .caret,.navbar-fixed-bottom .dropdown .caret{
+	content:"";
+	border-top:0;
+	border-bottom:4px dashed;
+	border-bottom:4px solid
+}
+.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{
+	top:auto;
+	bottom:100%;
+	margin-bottom:2px
+}
+@media (min-width:768px){.navbar-right .dropdown-menu{right:0;left:auto}.navbar-right .dropdown-menu-left{right:auto;left:0}}
+
+/*typeahead*/
+.typeahead { 
+		border: 2px solid #FFF;
+		border-radius: 4px;
+		padding: 8px 12px;
+		max-width: 300px;
+		min-width: 290px;
+		background: rgba(66, 52, 52, 0.5);
+		color: #FFF;
+	}
+	.tt-menu { 
+		width:300px; 
+	}
+	ul.typeahead{
+		margin:0px;
+		padding:10px 0px;
+	}
+	ul.typeahead.dropdown-menu li a {
+		padding: 10px !important;
+		border-bottom:#CCC 1px solid;
+		color:#FFF;
+	}
+	ul.typeahead.dropdown-menu li:last-child a { 
+		border-bottom:0px !important; 
+	}
+	.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+		text-decoration: none;
+		background-color: #1f3f41;
+		outline: 0;
+	}
